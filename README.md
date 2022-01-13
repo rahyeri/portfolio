@@ -1,5 +1,5 @@
 # portfolio
-<URL클릭시페이지가이동되니 마우스오른쪽버튼을이용하여새창으로열기해주시면편하게보실수있습니다>
+URL클릭시 페이지가 이동되니 마우스 오른쪽버튼을 이용하여 '새창으로 열기' 해주시면 편하게 보실 수 있습니다
 라혜리의 포트폴리오 사이트 입니다 site - http://rahyeri.dothome.co.kr/home/ 
 최종수정일 :22-01-13
 github 주소 : https://rahyeri.github.io/portfolio/ 
