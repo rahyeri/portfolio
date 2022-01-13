@@ -1,0 +1,175 @@
+/* http://rahyeri.dothome.co.kr/home의  서브페이지 css입니다 
+        copyright(c) rahyeri 최종수정일 22.01.09*/
+
+@charset "utf-8";
+
+/* main */
+.wrap {
+    font-family: 'Noto Sans KR', 'MalgunGothic', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px 250px;
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+article {
+    font-size: 18px;
+    color: #01003d;
+
+}
+
+article img {
+    width: 100%;
+}
+
+#t {
+    line-height: 1.5;
+}
+
+.wrap article:nth-of-type(1) {
+    background-color: transparent;
+
+}
+
+.wrap article:nth-of-type(2) {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 0px 30px 0px 0px;
+    background-color: transparent;
+    grid-area: 1/2/2/4;
+}
+
+.wrap article:nth-of-type(3) {
+    width: 100%;
+    grid-area: 2/1/3/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.3;
+
+}
+
+.wrap article:nth-of-type(4) {
+    grid-area: 2/2/3/4;
+}
+
+.wrap article:nth-of-type(5),
+.wrap article:nth-of-type(6),
+.wrap article:nth-of-type(7) {
+    font-size: 16px;
+    line-height: 1.5;
+    /* grid-area:3/1/4/3; */
+}
+
+.wrap article:nth-of-type(5) p,
+.wrap article:nth-of-type(6) p,
+.wrap article:nth-of-type(7) p {
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'NanumSquare';
+    transform: skew(-0.03deg);
+}
+.wrap article:nth-of-type(5) span,
+.wrap article:nth-of-type(6) span,
+.wrap article:nth-of-type(7) span{
+    text-decoration: underline;
+    color:#1e1c75;
+}
+/* 성향바 */
+#bar-title,
+#bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#bar-title {
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#bars {
+    width: 80%;
+}
+
+#bars li {
+    width: 100%;
+    height: 10px;
+    background-color: #ececec;
+}
+
+#bars li>span {
+    background-color: #ec1633;
+    width: 2%;
+    display: block;
+    overflow: hidden;
+    height: 10px;
+}
+
+#bars li:first-child,
+#bar-title li:first-child {
+    margin-top: 20px;
+}
+
+.title {
+    border-bottom: 1px double #262631;
+    font-size: 20px;
+    padding-bottom: 5px;
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Noto Sans KR', 'MalgunGothic', sans-serif !important;
+
+}
+
+/* 스킬바 */
+#skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.fa-play-circle {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fa-play-circle span {
+    font-size: 14px;
+}
+
+.high {
+    width: 10px;
+    height: 100px;
+    background-color: rgb(236, 236, 236);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.high span {
+    background-color: rgb(34, 89, 192);
+    height: 0px;
+    display: block;
+}
+
+#skill img {
+    width: 40px;
+}
+
+/*  */
+
+@media screen and (max-width:1530px) {
+    .s2 {
+        display: none;
+    }
+}

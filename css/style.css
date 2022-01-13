@@ -1,0 +1,757 @@
+/* http://rahyeri.dothome.co.kr/home의  메인페이지 css입니다 
+        copyright(c) rahyeri 최종수정일 22.01.09*/
+        
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@500&family=Pacifico&family=Patua+One&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 섹션1 최상단 */
+
+.s1 {
+    width: 100%;
+    height: 850px;
+    background: #ffffff;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 102;
+    background-color: #34d693;
+    /* overflow:hidden; */
+}
+
+.gnb {
+    width: 50%;
+    height: 100%;
+    margin: 0px auto;
+    font-size: 2.5vw;
+    color: #222;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+
+.gnb>li {
+    margin: 0px 0px 50px 150px;
+    position: relative;
+}
+
+.gnb>li a::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(34, 89, 192);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+.gnb>li a:hover::after {
+    width: 100%;
+}
+
+.fa-bars,
+.fa-times-circle {
+    font-size: 40px;
+    color: rgb(34, 89, 192);
+    position: absolute;
+    right: 82px;
+    top: 100px;
+    z-index: 105;
+}
+
+.fa-times-circle {
+    font-size: 42px;
+    display: none;
+}
+
+.fa-bars:hover,
+.fa-times-circle:hover {
+    cursor: pointer;
+}
+
+.s1>.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 850px;
+    background-color: rgb(34, 89, 192);
+}
+
+h1 {
+    position: absolute;
+    left: 23%;
+    top: 0;
+    z-index: 1;
+    width: 22% !important;
+}
+
+h1 img {
+    width: 100%;
+}
+
+.name {
+    color: rgb(34, 89, 192);
+    font-family: 'Righteous', cursive;
+    font-size: 9vw;
+    position: absolute;
+    left: 51%;
+    padding-top: 30px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio {
+    color: rgb(34, 89, 192);
+    font-family: 'GongGothicMedium';
+    font-size: 8.5vw;
+    position: absolute;
+    right: 1%;
+    top: 270px;
+    z-index: 99;
+    text-align: right;
+    width: 100%;
+}
+
+.circle {
+    position: fixed;
+    z-index: 100;
+    width: 150px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 73%;
+}
+
+.c_in img {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+/*제이쿼리효과적용  */
+.navcolor {
+    color: #fff;
+    font-weight: normal;
+}
+
+/* 다이얼내비 */
+.c01,
+.c02,
+.c03,
+.c04 {
+    position: fixed;
+    z-index: 100;
+    width: 200px;
+    left: 61%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Noto sans KR', '맑은 고딕', sans-serif;
+}
+
+.c01 {
+    transform: translate(-47%, -30px);
+}
+
+.c01:hover~img[src*="c_in"] {
+    animation: moving 1s linear 0.1s infinite;
+}
+
+@keyframes moving {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(-20deg)
+    }
+
+    70% {
+        transform: rotate(20deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.c02 {
+    transform: translate(33%, 50px);
+}
+
+.c03 {
+    transform: translate(-83%, 50px);
+}
+
+.c04 {
+    transform: translate(-18%, 155px);
+}
+
+.c01:hover,
+.c02:hover,
+.c03:hover,
+.c04:hover {
+    text-decoration: underline;
+    font-size: 17px;
+}
+/* 인트로글자 */
+.font_wrap {
+    position: fixed;
+    z-index: 1003;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+}
+
+.font {
+    position: fixed;
+    z-index: 4;
+    top: 45%;
+    left: 51%;
+    opacity: 0;
+}
+
+.font_wrap #txt {
+    color: #fff;
+    font-family: 'Noto sans KR';
+    line-height: 1.4;
+    font-size: 1.2vw;
+    position: fixed;
+    z-index: 4;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.font1 {
+    width: 100px;
+    height: 15px;
+    background-color: rgb(34, 89, 192);
+    transition: 0.5s;
+    /*left:40%; */
+}
+
+.act {
+    transform: rotate(90deg);
+}
+
+.font2 {
+    width: 60px;
+    height: 15px;
+    background-color: rgb(34, 89, 192);
+    /* left:43%; */
+}
+
+.font3 {
+    width: 100px;
+    height: 15px;
+    background-color: rgb(34, 89, 192);
+    transition: 0.5s;
+    /* transform:rotate(90deg);
+    left:46%; */
+}
+
+.font4 {
+    background-color: #34d693;
+    /* width:30px; height:30px;
+    border-radius:50%;
+    top: 37%;
+   left: 51.2%; */
+}
+
+.font5 {
+    width: 80px;
+    height: 15px;
+    background-color: #34d693;
+    transition: 0.4s;
+    /* transform:rotate(90deg);
+        top: 47%; */
+}
+
+/* 내사진 */
+#myphoto {
+    position: absolute;
+    left: 0%;
+    top: 120px;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 80px 0px 0px 0px;
+    width: 50%;
+    height: auto;
+}
+
+#myphoto img {
+    width: 100%;
+}
+
+#myphoto a {
+    position: relative;
+    font-size: 3vh;
+    right: 0%;
+    top: -20px;
+    z-index: 5;
+    color: #fff;
+    background-color: #222;
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1900px) {
+    #myphoto {
+        position: absolute;
+        left: 0%;
+        top: 130px;
+        z-index: 3;
+        overflow: hidden;
+        border-radius: 80px 0px 0px 0px;
+        width: 50%;
+        height: auto;
+    }
+
+    #myphoto a {
+        position: absolute;
+        font-size: 1vh;
+        left: 70%;
+        top: 70%;
+        z-index: 5;
+        color: #fff;
+        background-color: #222;
+        display: block;
+        padding: 8px 11px;
+        border: 1px solid #ccc;
+        transition: 0.5s;
+    }
+}
+
+#myphoto a:hover {
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #fff;
+
+}
+
+#particles-js {
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 800px;
+    z-index: 5;
+    font-size: 6vw;
+    color: #fff;
+}
+
+#particles-js p {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    z-index: 4;
+}
+
+
+
+/* 섹션3 */
+.s3 {
+    background-image: url('../image/desk.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+/* 섹션 s3_2 */
+.s3_2 {
+    height: 560px;
+    width: 100%;
+    background-color: rgb(34, 89, 192);
+    text-align: center;
+    position: relative;
+}
+
+.down {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 8px 14px;
+    background-color: #fff;
+    color: rgb(34, 89, 192);
+}
+
+.s3_2 p {
+    position: relative;
+    right: -135%;
+    WIDTH: 200%;
+    font-size: 8vw;
+    font-family: 'Righteous', cursive;
+    padding-top: 80px;
+    color: #5afab7;
+}
+
+.s3_2>ul {
+    display: flex;
+    width: 96%;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 50px auto 30px auto;
+}
+
+.s3_2>ul>li>span {
+    display: block;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.s3_2 img {
+    width: 150px;
+}
+
+/*  */
+h3 {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 3vw;
+    padding: 100px 0px 30px 0px;
+    color: rgb(34, 89, 192);
+}
+/* 섹션4 웹퍼블리싱 */
+.s4 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.s4 article {
+    width: 25%;
+    height: 500px;
+    transition: 0.8s;
+}
+
+.s4 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.8);
+
+}
+
+.s4 article:hover {
+    width: 40%;
+}
+
+.s4 article:hover img {
+    filter: brightness(1);
+}
+
+/* 섹션5그래픽 디자인 */
+.s5 {
+    display: flex;
+    /* justify-content:space-around; */
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    align-items: center;
+
+}
+
+.s5 h3 { transform:translateY(-50px);
+    padding: 0px 10px;
+}
+
+.s5 li:first-child {
+    width: 18%;
+}
+
+.s5 li:nth-child(2) {
+    width: 38%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.s5 li:nth-child(3) {
+    width: 38%;
+    overflow: hidden;
+}
+
+.s5 li:last-child {
+    width: 6%;
+    transition: 0.6s;
+}
+
+.s5 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.s5 img:hover {
+    filter: brightness(1);
+}
+
+.s5 i.fa-arrow-right {
+    font-size: 30px;
+    color: rgb(59, 59, 59);
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.s5 li:last-child:hover i.fa-arrow-right {
+    color: rgb(34, 89, 192);
+    margin-left: 30px;
+}
+
+
+
+
+/* 푸터영역 */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #111;
+    position: relative;
+    clear: both;
+    text-align: center;
+
+}
+
+footer>h2 {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+}
+
+footer>p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat';
+    font-size: 1.6vw;
+    color: rgb(123, 255, 193);
+    padding-top: 20px;
+}
+
+address {
+    color: #ccc;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    text-transform: capitalize;
+}
+
+aside a {
+    font-size: 16px;
+    color: rgb(123, 255, 193);
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+
+@media screen and (max-width:900px) {
+
+    .fa-bars,
+    .fa-times-circle {
+        position: absolute;
+        right: 82px;
+        top: 50px;
+        z-index: 2;
+    }
+
+
+    .s1,
+    .s1>.back {
+        height: 500px;
+    }
+
+    #myphoto {
+        position: absolute;
+        left: 0%;
+        top: 130px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    #myphoto img {
+        width: 100%;
+    }
+
+    #particles-js {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 55%;
+        height: 100vh;
+        z-index: 5;
+        /* background-color:rgb(0, 0, 0); */
+        font-size: 10vw;
+        color: #fff;
+    }
+
+    #particles-js p {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        z-index: 4;
+    }
+
+    .down,
+    aside a {
+        font-size: 2vw;
+    }
+
+    .s3_2 {
+        height: 350px;
+    }
+
+    .s3_2>ul {
+        display: flex;
+        width: 96%;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 50px auto 30px auto;
+    }
+
+    .s3_2>ul>li>span {
+        display: block;
+        padding-top: 10px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .s3_2 img {
+        width: 60px;
+    }
+
+    /*  */
+    h3 {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        padding: 80px 0px 20px 0px;
+        color: rgb(34, 89, 192);
+    }
+
+    .s4 {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .s4 article {
+        width: 25%;
+        height: 350px;
+        transition: 0.8s;
+    }
+
+    .s4 img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+
+    }
+
+    .s4 article:hover {
+        width: 50%;
+        opacity: 0.7;
+    }
+
+    .s5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 50px;
+
+    }
+
+    .s5 h3 { 
+        display:block;
+        padding: 0px 0px 20px 0px;
+        position:relative; 
+        top:-100px;
+        width: 100%;
+    }
+
+    .s5>li {
+        width: 96%;
+        margin: 0px auto;
+    }
+
+    .s5 li:nth-child(2),
+    .s5 li:nth-child(3) {
+        width: 96%;
+    }
+
+    .s5 img {
+        width: 100%;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    footer>p {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: rgb(123, 255, 193);
+        padding-top: 20px;
+    }
+
+    address {
+        color: #ccc;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        text-transform: capitalize;
+        font-size: 10px;
+    }
+
+    aside a {
+        font-size: 10px;
+        color: rgb(123, 255, 193);
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+    }
+
+}

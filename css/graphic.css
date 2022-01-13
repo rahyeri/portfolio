@@ -1,0 +1,172 @@
+/* http://rahyeri.dothome.co.kr/home의  서브페이지 css입니다 
+        copyright(c) rahyeri 최종수정일 22.01.08*/
+@charset "utf-8";
+
+main,
+section {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+}
+
+section>article {
+    width: 100%;
+}
+
+section>article>.grid_wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 400px 400px;
+    width: 100%;
+}
+
+.grid_wrap>li {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.grid_wrap>li:nth-child(odd) {
+    /* height:300px; width:100%;  */
+    overflow: visible;
+    /* position:relative; */
+
+}
+
+.grid_wrap>li a {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.g_img {
+    height:100%;
+    transition: 1s;
+    transform: scale(1.1);
+    display: block;
+    filter: grayscale(3);
+}
+
+.grid_wrap>li a:hover img {
+    transform: scale(1);
+    filter: none;
+}
+
+.on {
+    transform: scale(1);
+    filter: none;
+}
+/* 이미지설명 */
+.g_txt,
+.g_txt2 {
+    font-size: 2.5vw;
+    position: absolute;
+    bottom: -15px;
+    transition: 0.7s;
+
+    z-index: 12;
+}
+
+.g_txt a,
+.g_txt2 a {
+    color: #fff;
+}
+
+.effect {
+    /* background-color:rgba(255,255,255,0.5); */
+    bottom: -30px;
+    left: 20%;
+}
+
+.g_txt2 {
+    top: -15px;
+}
+
+.effect2 {
+    /* background-color:rgba(255,255,255,0.5); */
+    top: -50px;
+    left: 20%;
+}
+
+/* 마우스오버시 라인 */
+.inline1,
+.inline2,
+.inline3,
+.inline4 {
+    position: absolute;
+    z-index: 11;
+}
+
+.inline1,
+.inline2 {
+    width: 0%;
+    height: 5px;
+    margin-left: 5%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.inline1 {
+    top: 5%;
+}
+
+.inline2 {
+    top: 90%;
+    left: -5%;
+}
+
+.inline3,
+.inline4 {
+    height: 90%;
+    width: 5px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.inline3 {
+    left: 5%;
+}
+
+.inline4 {
+    left: 90%;
+    margin-top: 5.2%;
+}
+
+/* 모달창 */
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1000;
+}
+
+.modal img {
+    width: 900px;
+    margin-top: 50px;
+}
+
+.modal a {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    position: fixed;
+    z-index: 1001;
+    left: 75%;
+    top: 0;
+}
+
+.modal #down_btn {
+    top: 80%;
+}
