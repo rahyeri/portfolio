@@ -118,9 +118,13 @@ $(function () {
   $('.modal').hide();
   $('.grid_wrap > li').click(function () {
     $('.modal').show();
+      
+      return false;
   });
   $('.fa-close').click(function () {
     $('.modal').hide();
+      
+      return false;
   });
 
    //이미지 클릭시 모달창에 가져오기 
