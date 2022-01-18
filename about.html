@@ -6,21 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HYERI의 포트폴리오</title>
         <link rel="shortcut icon" type="./image/x-icon" href="./image/popicon2.ico">
-        <!-- 베이스, 리셋 , 아이콘폰트 -->
+        <!-- 아이콘폰트, 리셋 , 베이스, 레이아웃 -->
         <link href="./css/all.min.css" rel="stylesheet" type="text/css">
         <link href="./css/reset.css" rel="stylesheet" type="text/css">
         <link href="./css/base.css" rel="stylesheet" type="text/css">
         <link href="./css/layout.css" rel="stylesheet" type="text/css">
-        <link href="./css/about.css" rel="stylesheet" type="text/css">
-        <link href="./css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
-        <link
-        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- 구글폰트 -->
+        <!-- 폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Righteous&display=swap" rel="stylesheet">
-        <link
-        rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+        <!-- 페이지 스타일서식 -->
+        <link href="./css/about.css" rel="stylesheet" type="text/css">
 
 
         <!-- 제이쿼리 -->
@@ -39,7 +36,7 @@
 
                     delay: 0, // start delay in seconds [default:0]
 
-                    speed: 20, // typing speed (ms) [default:50]
+                    speed: 15, // typing speed (ms) [default:50]
                     speed_vary: false, // 'human like' speed variation [default:false]
 
                     beep: false, // beep while typing (Web Audio API) [default:false]
@@ -140,6 +137,7 @@
         <!-- 메인 -->
         <main>
             <article class="h_bottom">
+                <h6>페이지이동링크박스</h6>
                 <a href="web.html" title="웹퍼블리싱갤러리">
                     <i class="fas fa-arrow-left"></i>WEB PUBLISHING</a>
                 <a href="graphic.html" title="디자인갤러리">GAPHIC DESIGN<i class="fas fa-arrow-right"></i>
@@ -148,25 +146,27 @@
             <section>
                 <h6>프로필정보</h6>
                 <div class="wrap">
-                    <article><img src="./image/photo.png" alt="프로필사진"></article>
+                    <article><h6>프로필사진</h6><img src="./image/photo.png" alt="프로필사진"></article>
                     <article>
+                        <h6>인사말</h6>
                         <div id="t">
                             <strong style="font-weight:bold;">안녕하세요</strong><img style="height:1.5vw;width:auto;" src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" alt=""/>
-                            웹퍼블리셔를 꿈꾸는 33세 <strong style="font-weight:bold;">라혜리</strong>입니다
-                            <br><ins>저는&nbsp;</ins>비록<em> <del>비전공자&#46;&#46;&#46;&#46;<ins></ins></del>
+                            웹퍼블리셔를 꿈꾸는 34세 <strong style="font-weight:bold;">라혜리</strong>입니다
+                            <br><ins>저는&nbsp;</ins>비록<em> <del>신입&#46;&#46;&#46;&#46;<ins></ins></del>
                             <u title="Hypertext Markup Language">웹퍼블리셔</u>라는 직업을 알게되고</em>
-                            포토샵과&nbsp;<kbd>웹코딩을 배운지</kbd><ins>5개월</ins>정도 밖에 되지 않았지만 지금은 몹시 재미있고 인터렉티브 웹에 흥미를 가지고 있습니다&#44;
-                            <strong>시작할 당시에는&nbsp;</strong><span class="g">두려움도&nbsp;</span><kbd>있었지만 열심히 노력하여</kbd>
-                            <code>&lt;포트폴리오를 완성&gt;</code> <ins>하였습니다</ins><br><span class="g">앞으로도&nbsp;</span>부족한만큼
-                            <del>달리겠습니다</del><strong>노력하겠습니다</strong><em>&rarr;</em>
+                            포토샵과&nbsp;<kbd>웹코딩을 배운지</kbd><ins>5개월</ins>정도 밖에 되지 않았지만 지금은 몹시 재미있고 웹코딩에 흥미를 가지고 있습니다&#44;
+                            <strong>처음엔 어려웠지만 &nbsp;</strong><span class="g">배운 것을 활용하였을 때 &nbsp;</span><kbd>성취감이 큰 것이 코딩의 매력이라 생각합니다 </kbd>
+                            <code>&lt;앞으로의 계획은 &gt;</code> <ins>퍼블리싱 결과물을</ins><br><span class="g">지속적으로 수정할 것이며&nbsp;</span>html과 css기초를 다지기위해 공부하고 있습니다
+                            <strong>추후 자바스크립트와 </strong>리엑트를 공부할 것입니다<em>&rarr;</em>
                             <a target="_blank" href="https://mntn-dev.github.io/t.js">포트폴리오 다운로드<i class="fas fa-download"></i>
                             </a>.<br>
-                            <ins>1</ins>
-                            <del>(마무리 인사를 드려야하는데)</del><br/><span style="border-bottom:1px dashed magenta;">읽어주셔서('<span class="p">감사합니다<i class="fas fa-heart"></i>
+                            
+                            <del>미래에는 프론트 엔드 개발자가 되고싶습니다</del><br/><span style="border-bottom:1px dashed magenta;">읽어주셔서('<span class="p">감사합니다<i class="fas fa-heart"></i>
                                 </span>')</span>
                         </div>
                     </article>
                     <article>
+                        <h6>성향</h6>
                         <ul id="bar-title">
                             <li>창의성</li>
                             <li>책임감</li>
@@ -198,6 +198,7 @@
                     </article>
 
                     <article>
+                        <h6>스킬바</h6>
                         <p class="title">Skills
                             <i class="far fa-play-circle"><span>빠르게보기</span></i>
                         </p>
@@ -258,23 +259,23 @@
                                 <img src="./image/skill8.png" alt="아이콘">
                                 <p>Jquery</p>
                             </li>
-
                         </ul>
-
-
                     </article>
                     <article>
+                        <h6>프로필설명</h6>
                         <p class="title">Personality</p>
-                        <p>제가 생각하는 큰 특징이자 장점은 <span>책임감이 강한 사람이라는 것입니다&#46;</span> 과제물이 주어지면 반드시 먼저 처리해야 마음이 편하며 또 가능한 지키라고 하셨던 부분을 지키기 위해 메모를 꼼꼼히하는 등의 습관이 생겼습니다&#46; 업무시에도 주어진 일을 최대한 빨리&#44; 제대로 처리하려 노력할 것입니다&#46; 많은 서비스업 경력이 있어서 고객응대에 익숙합니다&#46; 친해지면 재밌다는 소리를 듣습니다</p>
+                        <p>제가 생각하는 큰 특징이자 장점은 <span>책임감이 강한 사람이라는 것입니다&#46;</span> 과제물이 주어지면 반드시 먼저 처리해야 마음이 편하며 또 가능한 지키라고 하셨던 부분을 지키기 위해 메모를 꼼꼼히하는 등의 습관이 있습니다&#46; 업무시에도 주어진 일을 최대한 빨리&#44; 제대로 처리하려 노력할 것입니다&#46; 많은 서비스업 경력이 있어서 고객응대에 익숙합니다&#46; 친해지면 재밌다는 소리를 듣습니다</p>
                     </article>
                     <article>
+                        <h6>프로필설명</h6>
                         <p class="title">Design tools</p>
                         <p>포토샵&#44;일러스트&#44;인디자인 GTQ자격증시험 준비과정을 이수하여 <span>포토샵은 GTQ자격증이 있습니다&#46;</span> 웹디자이너기능사 준비를 하면서 XD도 배웠고 디자인툴을 많이 활용하게 되었습니다&#46; 포토샵&#44;일러스트는 대부분의 기능을 알고 업무에 활용이 가능하기 때문에 높은 점수를 주었습니다&#46; XD도 최근 많이 사용하여 사용에 익숙해진 프로그램입니다
                         </p>
                     </article>
                     <article>
+                        <h6>프로필설명</h6>
                         <p class="title">Web development</p>
-                        <p>완벽하진 않지만 능력치의 기준을 삼기위해 기본이 되는 HTML을 90&percnt;로 설정하였습니다&#46; CSS의 영역은 어마어마하지만 <span>CSS의 기본에 대해 잘 이해하고 사용할 수 있다고 생각합니다&#46;</span> 자바스크립트와 JQUERY도 기본은 열심히 배웠고 그것을 최대한 활용하려고 노력하고있지만 좀 더 공부해야 할 부분이 있습니다</p>
+                        <p>완벽하진 않지만 능력치의 기준을 삼기위해 기본이 되는 HTML을 90&percnt;로 설정하였습니다&#46; CSS의 영역은 어마어마하지만 <span>CSS의 기본에 대해 잘 이해하고 사용할 수 있다고 생각합니다&#46;</span> 자바스크립트는 기본적 이론을 배웠고 활용에는 시간이 필요합니다. JQUERY는 자바스크립트보다는 쉽게 활용할 수 있지만 좀 더 공부해야 할 부분이 있습니다</p>
                     </article>
 
                 </div>

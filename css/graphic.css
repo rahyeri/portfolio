@@ -1,7 +1,6 @@
-/* http://rahyeri.dothome.co.kr/home의  서브페이지 css입니다 
-        copyright(c) rahyeri 최종수정일 22.01.08*/
 @charset "utf-8";
-
+/* http://rahyeri.dothome.co.kr/home의  서브페이지 css입니다 
+        copyright(c) rahyeri 최종수정일 22.01.14*/
 main,
 section {
     width: 100%;
@@ -163,7 +162,7 @@ section>article>.grid_wrap {
     color: #fff;
     position: fixed;
     z-index: 1001;
-    left: 75%;
+    left: 85%;
     top: 0;
 }
 

@@ -1,6 +1,3 @@
-/* http://rahyeri.dothome.co.kr/home의  메인페이지 css입니다 
-        copyright(c) rahyeri 최종수정일 22.01.09*/
-        
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@500&family=Pacifico&family=Patua+One&family=Righteous&display=swap');
@@ -12,6 +9,9 @@
     font-weight: normal;
     font-style: normal;
 }
+/* http://rahyeri.dothome.co.kr/home의  메인페이지 css입니다 
+        copyright(c) rahyeri 최종수정일 22.01.18*/
+        
 
 /* 섹션1 최상단 */
 
@@ -332,7 +332,7 @@ h1 img {
         font-size: 1vh;
         left: 70%;
         top: 70%;
-        z-index: 5;
+        z-index: 7;
         color: #fff;
         background-color: #222;
         display: block;
@@ -356,7 +356,7 @@ h1 img {
     left: 0;
     width: 50%;
     height: 800px;
-    z-index: 5;
+    z-index: 2;
     font-size: 6vw;
     color: #fff;
 }
@@ -378,8 +378,6 @@ h1 img {
     background-position: top;
     width: 100%;
     height: 300px;
-    background-repeat: no-repeat;
-    background-size: fill;
 }
 
 /* 섹션 s3_2 */
