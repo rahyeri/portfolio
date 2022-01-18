@@ -1,5 +1,5 @@
-/* http://rahyeri.dothome.co.kr/home의 메인페이지 제이쿼리 소스입니다 
-    제작 : rahyeri 최종수정일 22.01.08*/
+/* http://rahyeri.dothome.co.kr/home의 서브 - 그래픽 디자인 페이지 제이쿼리 소스입니다 
+    제작 : rahyeri 최종수정일 22.01.14*/
 
 $(function () {
   //내비  
